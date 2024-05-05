@@ -45,8 +45,8 @@ def sendEmail(to,content):
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('manishsinghb004@gmail.com','Manish@12345')
-    # server.sendmail('manishsinghb004@gmail.com',to,content)
+    server.login('email_id','password')
+    # server.sendmail('email_id',to,content)
     server.close()
 
 
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 
         if "send message" in query:
             # send whatsapp message
-            kit.sendwhatmsg("+919599323982","this is testing protocol",2,3)
+            kit.sendwhatmsg("my_number","this is testing protocol",2,3)
             # TODO : NEED TO UPDATE WITH MORE NEW TRICK 
 
         if "play song" in query or "play music":
